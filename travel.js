@@ -11,7 +11,8 @@ var nm = readline.question('Masukan Nama Anda: ');
 var kt= parseInt(readline.question('Masukan Kode Tujuan: '));
 var jt = parseInt(readline.question('Masukan Jumlah Tiket: '));
 var me = readline.question('Apakah Anda Member? [y/t]: ');
-console.log('/n');
+console.log('\n');
+
 
 //harga tiket tujuan
 var hargatiket;
@@ -32,7 +33,7 @@ var subtotal = hargatiket*jt;
 var diskon;
 if (me==('y'||'Y')) {
 diskon = 0.10*subtotal;
-} else if ((me=='t'||'T')) {
+} else if (me==('t'||'T')) {
 diskon = 0;
 }
 //total harga yang dibayarkan 
