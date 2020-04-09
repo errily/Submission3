@@ -30,9 +30,9 @@ var subtotal = hargatiket*jt;
 
 //keterangan member
 var diskon;
-if (me=='y'||'Y') {
+if (me==('y'||'Y')) {
 diskon = 0.10*subtotal;
-} else if (me=='t'||'T') {
+} else if ((me=='t'||'T')) {
 diskon = 0;
 }
 //total harga yang dibayarkan 
